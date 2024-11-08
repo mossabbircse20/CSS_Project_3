@@ -101,7 +101,7 @@
 /* herosection2 */
 
 .herosection2 {
-    height: 600px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -125,6 +125,38 @@
 }
 
 .herosection2-movie img {
+    height: 280px;
+    width: 198px;
+    border-radius: 20px;
+}
+
+/* herosection3 */
+
+.herosection3 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #E3D6D4;
+    gap : 15px;
+    margin-left: 190px;
+}
+
+.herosection3 h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.herosection3-movie {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+
+}
+
+.herosection3-movie img {
     height: 280px;
     width: 198px;
     border-radius: 20px;
