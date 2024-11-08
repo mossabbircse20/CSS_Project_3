@@ -161,3 +161,53 @@
     width: 198px;
     border-radius: 20px;
 }
+
+/* herosection4 */
+
+.herosection4 {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #E3D6D4;
+    gap : 15px;
+    margin-left: 190px;
+}
+
+.herosection4 h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.herosection4-spanbox {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+}
+
+.herosection4-spanbox span {
+    position: relative;
+    height: 125px;
+    width: 360px;
+    background-color: #252525;
+    border-radius: 20px;
+    border: 1px solid #303030;
+    color: white;
+
+}
+
+.herosection4-spanbox span h3 {
+    position: absolute;
+    font-size: 1.1rem;
+    top: 10px;
+    left: 20px;
+}
+
+.herosection4-spanbox span i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: red;
+}
