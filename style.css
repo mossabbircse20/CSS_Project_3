@@ -10,7 +10,6 @@
 
 .navbar {
     height: 120px;
-    width: 100%;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -25,7 +24,7 @@
 
 .navbar button {
     height: 35px;
-    width: 85px;
+    width: 100px;
     font-size: 0.95rem;
     font-weight: bold;
     text-align: center;
@@ -45,9 +44,11 @@
 
 .herosection1 img {
     height: 800px;
-    width: 1800px;
     border: 5px solid transparent;
     border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-size: contain;
 }
 
 .herosection1-icon {
@@ -79,7 +80,7 @@
 
 .herosection1-input input {
     height: 60px;
-    width: 380px;
+    width: 400px;
     background-color: rgba(80, 80, 128, 0.712);
     border: 1px solid white;
     border-radius: 40px;
@@ -89,7 +90,7 @@
 
 .herosection1-input button {
     height: 60px;
-    width: 195px;
+    width: 200px;
     background-color: red;
     color: white;
     border: 1px solid transparent;
@@ -126,7 +127,7 @@
 
 .herosection2-movie img {
     height: 280px;
-    width: 198px;
+    width: 220px;
     border-radius: 20px;
 }
 
@@ -158,7 +159,7 @@
 
 .herosection3-movie img {
     height: 280px;
-    width: 198px;
+    width: 220px;
     border-radius: 20px;
 }
 
@@ -200,7 +201,6 @@
     border-radius: 20px;
     border: 1px solid #303030;
     color: white;
-
 }
 
 .herosection4-spanbox span h3 {
@@ -227,6 +227,7 @@
     color: white;
     gap : 15px;
     margin-left: 190px;
+    margin-right: 190px;
 }
 
 .herosection5 h1 {
@@ -235,6 +236,7 @@
 }
 
 .herosection5-spanbox {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -243,7 +245,6 @@
 
 .herosection5-spanbox span {
     height: 75px;
-    width: 1490px;
     background-color: #252525;
     border: 1px solid #303030;
     border-radius: 20px;
@@ -266,7 +267,7 @@
 
 .herosection5 button {
     height: 40px;
-    width: 145px;
+    width: 150px;
     background-color: red;
     color: white;
     border: 1px solid transparent;
@@ -308,7 +309,7 @@
 
 .footer button {
     height: 35px;
-    width: 130px;
+    width: 150px;
     border: 1px solid #303030;
     background-color: #252525;
     color: white;
@@ -330,3 +331,307 @@
     margin-bottom: 100px;
     font-weight: 400;
 }
+
+/* Responsive for all devices */ 
+
+@media (max-width: 1650px) {
+    .navbar {
+        height: auto;
+        padding: 15px;
+    }
+
+    .navbar img {
+        height: 60px;
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .navbar button {
+        width: 80px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .herosection1 img {
+        width: 95%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .herosection1-input input {
+        width: 350px;
+        height: 55px;
+    }
+
+    .herosection1-input button {
+        width: 180px;
+        height: 55px;
+        font-size: 1.4rem;
+    }
+
+    .herosection2, .herosection3, .herosection4, .herosection5 {
+        height: auto;
+        margin-left: 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .herosection2-movie, .herosection3-movie {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .herosection2-movie img,
+    .herosection3-movie img {
+        height: 250px;
+        width: 200px;
+    }
+
+    .herosection4-spanbox {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .herosection4-spanbox span {
+        width: 350px;
+        height: 120px;
+    }
+
+    .herosection5-spanbox {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .herosection5-spanbox span {
+        height: auto;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .herosection5 button {
+        font-size: 1rem;
+        width: 140px;
+        height: 40px;
+        margin-left: 2%;
+    }
+
+    .footer {
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        gap: 50px;
+    }
+
+    .footer span {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+
+    .footer button {
+        width: 110px;
+        font-size: 1rem;
+    }
+}
+
+
+/* For small devices (up to 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar img {
+        margin: 10px 0;
+        height: 50px;
+        width: auto;
+    }
+
+    .navbar button {
+        margin: 10px 0;
+        width: 70px;
+    }
+
+    .herosection1 img {
+        height: auto;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .herosection1-input input {
+        width: 280px;
+        height: 50px;
+    }
+
+    .herosection1-input button {
+        width: 150px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .herosection2, .herosection3, .herosection4, .herosection5 {
+        margin-left: 20px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .herosection2-movie, .herosection3-movie {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .herosection2-movie img,
+    .herosection3-movie img {
+        height: 250px;
+        width: 200px;
+    }
+
+    .herosection4-spanbox {
+        flex-direction: column;
+    }
+
+    .herosection4-spanbox span {
+        width: 300px;
+        height: 100px;
+    }
+
+    .herosection5-spanbox span {
+        justify-content: center ;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .herosection5 button {
+        font-size: 0.9rem;
+        width: 120px;
+        height: 35px;
+        margin-left: 5%;
+    }
+
+    .footer {
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .footer span {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .footer button {
+        width: 100px;
+        font-size: 0.9rem;
+    }
+}
+
+/* For extra small devices (up to 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar img {
+        margin: 10px 0;
+        height: 50px;
+        width: auto;
+    }
+
+    .navbar button {
+        margin: 10px 0;
+        width: 70px;
+    }
+
+    .herosection1 img {
+        height: auto;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .herosection1-input input {
+        width: 280px;
+        height: 50px;
+    }
+
+    .herosection1-input button {
+        width: 150px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .herosection2, .herosection3, .herosection4, .herosection5 {
+        margin-left: 20px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .herosection2-movie, .herosection3-movie {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .herosection2-movie img,
+    .herosection3-movie img {
+        height: 250px;
+        width: 200px;
+    }
+
+    .herosection4-spanbox {
+        flex-direction: column;
+    }
+
+    .herosection4-spanbox span {
+        width: 300px;
+        height: 100px;
+    }
+
+    .herosection5-spanbox span {
+        justify-content: center ;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .herosection5 button {
+        font-size: 0.9rem;
+        width: 120px;
+        height: 35px;
+        margin-left: 5%;
+    }
+
+    .footer {
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .footer span {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .footer button {
+        width: 100px;
+        font-size: 0.9rem;
+    }
+}
+
